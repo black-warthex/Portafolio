@@ -172,7 +172,7 @@ a:hover{
     align-self: center; 
 }
 
-.text-landing h1{ 
+.text-landing h1{     
     text-align: center;    
     color:#BD93F9;
 }
@@ -236,12 +236,15 @@ a:hover{
     .img-landing{         
         width:100%;
         height: 100%;
+        padding-bottom: 150px;
     }
     
     .text-landing h1{ 
+        margin-top: 150px;
         font-size: 40px;    
     }
-    .text-landing h2{         
+    .text-landing h2{ 
+        margin-bottom: -20px;        
         font-size: 20px;        
     }
 
@@ -335,15 +338,18 @@ a:hover{
     .landing{
         flex-direction: row;
     }
-    .img-landing{   
+    .img-landing{ 
+        padding: 0;  
         width:50%;
         height: 100%;
     }
     
-    .text-landing h1{ 
+    .text-landing h1{
+        margin: 0; 
         font-size: 55px;
     }
     .text-landing h2{ 
+        padding: 0;
         font-size: 25px; 
     }    
     .img-profile{
