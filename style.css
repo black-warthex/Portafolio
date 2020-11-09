@@ -6,8 +6,7 @@
 }
 body{
     font-family: sans-serif;
-    background-color:  #383A59;;
-    
+    background-color:  #383A59;    
 }
 nav{        
     background:#282A36;
@@ -19,11 +18,19 @@ ul{
 a{
     color:white;
     text-decoration:none;
+    opacity: 0.6;
 }
 a:hover{
-    color: #FF79C6;
-    border: 1px #FF79C6 solid;
-    transition: 1s;
+   opacity: 1;
+}
+ul{
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+strong{
+    color: #027AFF;
 }
 
 .name-logo{
@@ -51,65 +58,43 @@ a:hover{
     border-bottom: 1px #444 solid;
 }
 
-.knowledge{
-    width: 100%;
-    height: 100vh;
+.knowledge{    
+    background-color: white; 
 }
 
 .container{        
-    background-color: #383A59;
+    background-color: white;
+    margin: auto;
+    
 }
 
 .container h1{
-    background-color:#282A36    ;    
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 40px;        
     font-size: 50px;
-    color:#52C3A3;
-    text-align: center;
-    font-weight: bold;
-    border-bottom:5px #52C3A3 solid;
-    
+    color:#333333;
+    text-align: center;  
+    margin-bottom: 20px;    
 }
 .container h2{
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
-    color:#BD93F9;
+    color:#333333;
+    opacity: 0.8;
+    border-bottom:10px #333333 solid  ;   
 }
 .container h3{
-    border-top:10px #BD93F9 double;
-    text-align: center;
-    padding-top: 20px;
+    font-size: 35px;    
+    text-align: left;
+    padding-top: 80px;
     padding-bottom: 30px;
-    color:#8BE9FD;
+    color:#333333;
+    opacity: 0.9;
 }
 .container p{
     font-size: 20px;
-    text-align: center;
-    color: #BBBFCC;
-}
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;    
-        
-}
-.icons{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-decoration: none;
-    text-align: center;
-    color: #BBBFCC;
-}
-.item-knowledge {
-    background-color: #282A36;
-    width: 150px;
-    height: 150px;     
-    text-align: center;    
-    padding-top: 30px;
-    margin: 5px;    
-    border-radius: 10px 10px;
-    box-shadow: #8BE9FD 5px 5px 10px;
+    text-align: left;
+    color: #333333;
+    opacity: 0.6;
 }
 
 /*view menu in smartphone*/
@@ -236,10 +221,8 @@ a:hover{
 @media all and (min-width:320px ){
     .img-landing{         
         width:100%;
-        height: 100%;
-      
-    }
-    
+        height: 100%;      
+    }    
     .text-landing h1{         
         font-size: 40px;    
     }
@@ -255,17 +238,27 @@ a:hover{
     .landing{
         height: 80vh;
     }
-
     .menu{
         margin-bottom: 60px;
     }
-
     .fondo .info p{
         text-align: justify;    
         font-size: 16px;      
         margin-left: 10px;
         margin-right: 10px;
     }
+    .fondo{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .container{
+        width: 90%;
+    }
+    .knowledge{
+        height: 180hv;
+    }
+    
     
 }
 
@@ -313,8 +306,15 @@ a:hover{
     }
     .about{               
         height:90vh;              
-    }     
-
+    }
+    
+    .fondo{
+        flex-direction: row;
+        justify-content: center;        
+    }
+    .container{
+        width: 80%;
+    }
 
     
 }
@@ -387,5 +387,8 @@ a:hover{
 
     .about{
         height: 100vh;
+    }
+    .knowledge{                
+        height: 100vh;        
     }
 }
